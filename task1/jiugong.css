@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+}
+
+.container {
+  /*margin: 0 auto;*/
+  /*border: black 1px solid;*/
+}
+
+.item {
+  margin: 1%;
+  float: left;
+  width: 31%;
+  /* 通过设置padding-bottom 来保持item的高度跟随宽度变化。
+  当一个元素的 padding使用百分比表示时，那这个百分比是相对于其父元素的宽度而言的
+  这里width: 30% ， padding-bottom: 30% 那么这个元素的宽高就是相等的
+  */
+  padding-bottom: 31%;
+  background-color: #fea500;
+  /*border: green 1px solid;*/
+  border-radius: 5%;
+}
+
+/*清除浮动*/
+.clearFix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
