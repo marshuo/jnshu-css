@@ -1,0 +1,48 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-image: url("images/background.png");
+}
+
+.top {
+}
+.topImg {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.contents {
+  margin: 10vh 10vw;
+}
+
+.bottom {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
