@@ -1,0 +1,119 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: #eff0f4;
+}
+
+a {
+  font-size: 1.6rem;
+  font-family: STHeitiSC, 'Microsoft YaHei', sans-serif;
+}
+
+.head {
+  background-color: #5ac0ce;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.headLeft {
+  float: left;
+  padding-left: 1.4rem;
+}
+
+.headRight {
+  float: right;
+  text-align: right;
+  padding-right: 1.4rem;
+}
+
+.head a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.head:after{
+  clear: both;
+}
+
+.main {
+}
+
+.icon {
+  width: 1.4rem;
+}
+
+.divInput {
+  margin: 0.7rem 0;
+  background-color: #fff;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.divInput img {
+  vertical-align: middle;
+}
+
+.divIcon {
+  width: 5.8rem;
+  text-align: center;
+  margin-top: 1.4rem;
+  border-right: 1px solid #e1e5e7;
+  display: inline-block;
+}
+
+.divInput input {
+  height: 5rem;
+  border: 0;
+  padding: 0;
+  margin-left: 1.7rem;
+  /*color: #5ac0ce;*/
+  display: inline-block;
+  width: calc(100% - 8rem);
+}
+
+.main input::placeholder{
+  color: #e1e5e7;
+  font-family: STHeitiSC, 'Microsoft YaHei', sans-serif;
+  font-size: 1.6rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*输入框获得焦点时，隐藏placeholder的提示信息*/
+/*chrome浏览器*/
+input:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+/*firefox浏览器*/
+input:focus::-moz-placeholder{
+  color: transparent;
+}
+/*IE浏览器*/
+input:focus::-ms-input-placeholder{
+  color: transparent;
+}
+
+.loginBtn {
+  background-color: #5ac0ce;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  border: 0;
+  margin-top: 3.5rem;
+  font-size: 1.8rem;
+  font-family: STHeitiSC, 'Microsoft YaHei', sans-serif;
+}
+
+.forget a {
+  text-decoration: none;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 1.4rem;
+  color: #5ac0ce;
+}
