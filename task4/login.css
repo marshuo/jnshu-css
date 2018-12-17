@@ -12,30 +12,37 @@ a {
   font-family: STHeitiSC, 'Microsoft YaHei', sans-serif;
 }
 
-.head {
+.header {
   background-color: #5ac0ce;
   height: 4.5rem;
   line-height: 4.5rem;
   text-align: center;
 }
 
-.headLeft {
+.headerLeft {
   float: left;
   padding-left: 1.4rem;
 }
 
-.headRight {
+.headerRight {
   float: right;
   text-align: right;
   padding-right: 1.4rem;
 }
 
-.head a {
+.header a {
   text-decoration: none;
   color: #fff;
+  font-size: 1.6rem;
 }
 
-.head:after{
+.header>a {
+  font-size: 1.8rem;
+}
+
+
+
+.header:after{
   clear: both;
 }
 
