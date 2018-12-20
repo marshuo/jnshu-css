@@ -1,0 +1,149 @@
+html {
+  font-size: 10px;
+  font-family: STHeitiSC, heiti, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 4.4rem;
+  background-color: #5ac0ce;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 4.4rem;
+  color: #fff;
+  font-family: STHeitiSC, 'heiti', sans-serif;
+}
+
+.headerIcon {
+  float: left;
+  width: 1.1rem;
+  vertical-align: middle;
+  margin-left: 1.7rem;
+  margin-top: 1.3rem;
+}
+
+.divTop{
+  position: relative;
+  height: 16.4rem;
+  background: url("background.png") no-repeat;
+  /*自动缩放*/
+  background-size: cover;
+  /*垂直居中*/
+  display: flex;
+  align-items: center;
+}
+
+.divTop .divIcon {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.divIcon img {
+  width: 8.5rem;
+}
+
+.divInfo {
+  display: inline-block;
+  margin-left: 2.0rem;
+  /*border: 1px solid blue;*/
+  color: #fff;
+}
+
+.divInfo .Name {
+  font-size: 1.8rem;
+}
+
+.divInfo .Age {
+  font-size: 1.4rem;
+}
+
+.divInfo .Address {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.divInfo .Address img {
+  margin-right: 0.7rem;
+  width: 1rem;
+}
+
+.divBottom {
+  font-size: 1.6rem;
+}
+
+.divBottom .formHead div {
+  display: flex;
+  align-items: center;
+  height: 5.0rem;
+  margin-left: 1.5rem;
+}
+
+.divBottom .formHead div span {
+  padding-left: 1.5rem;
+  border-left: 2px solid rgb(95, 192, 205);
+}
+
+.divBottom .formBody {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.divBottom .formBody div {
+  min-height: 5.0rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #999;
+  margin-left: 1.6rem;
+}
+
+.divBottom .formBody .option {
+  border-top: 0;
+}
+
+.formBody span {
+  padding: 0 1.4rem;
+}
+
+.formBody .left {
+  border-right: 1px solid #999;
+  color: #999;
+  min-width: 6.4rem;
+}
+
+.formBody .right {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.option>span>span {
+  padding: 0;
+}
+.option img {
+  width: 1.2rem;
+  padding-right: 0.5rem;
+}
+.option .left {
+  color: black;
+}
+
+.price .right {
+  color: red;
+}
+.introduce .right {
+  font-size: 1.4rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 2.0rem;
+  width: 100%;
+  border: 1px solid red;
+  height: 5.0rem;
+}
+
+
+.footer button {
+}
