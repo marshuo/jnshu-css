@@ -8,6 +8,8 @@ body {
   padding: 0;
 }
 
+/* header */
+
 .header {
   height: 4.4rem;
   background-color: #5ac0ce;
@@ -24,6 +26,17 @@ body {
   vertical-align: middle;
   margin-left: 1.7rem;
   margin-top: 1.3rem;
+}
+
+/* main */
+.main {
+  position: absolute;
+  width: 100%;
+  /*min-width: 300px;*/
+  top: 4.4rem;
+  bottom: 6.5rem;
+  /*正文内容不会被footer挡住*/
+  overflow-y: auto;
 }
 
 .divTop{
@@ -109,7 +122,7 @@ body {
 }
 
 .formBody .left {
-  border-right: 1px solid #999;
+  border-right: 1px solid #e1e5e7;
   color: #999;
   min-width: 6.4rem;
 }
@@ -121,6 +134,7 @@ body {
 .option>span>span {
   padding: 0;
 }
+
 .option img {
   width: 1.2rem;
   padding-right: 0.5rem;
@@ -136,14 +150,36 @@ body {
   font-size: 1.4rem;
 }
 
+
+/* footer */
 .footer {
   position: fixed;
-  bottom: 2.0rem;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  padding: 0.3rem 0;
+  background-color: #fff;
+  min-width: 30rem;
   width: 100%;
-  border: 1px solid red;
-  height: 5.0rem;
 }
 
+.footer a {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  flex: 1;
+  border-radius: 0.3rem;
+  color: #5FC0CD;
+  font-size: 1.7rem;
+  height: 4.4rem;
+  line-height: 4.4rem;
+  margin: 0.5rem 0.6rem;
+  text-decoration: none;
+  border: 1px solid #5FC0CD;
+  text-align: center;
+}
 
-.footer button {
+.footer .active {
+  background-color: #5FC0CD;
+  color: #fff;
 }
