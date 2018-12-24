@@ -39,7 +39,7 @@ body {
   overflow-y: auto;
 }
 
-.divTop{
+.mainTop{
   position: relative;
   height: 16.4rem;
   background: url("background.png") no-repeat;
@@ -50,62 +50,67 @@ body {
   align-items: center;
 }
 
-.divTop .divIcon {
+.mainTop .mainTopLeft {
   display: inline-block;
   margin-left: 1.5rem;
 }
 
-.divIcon img {
+.mainTopLeft img {
   width: 8.5rem;
 }
 
-.divInfo {
+.mainTopRight {
   display: inline-block;
   margin-left: 2.0rem;
   /*border: 1px solid blue;*/
   color: #fff;
 }
 
-.divInfo .Name {
+.mainTopRight .Name {
+  /*display: inline-block;*/
   font-size: 1.8rem;
+  margin-right: 1.6rem;
 }
 
-.divInfo .Age {
+.mainTopRight .Age {
   font-size: 1.4rem;
 }
 
-.divInfo .Address {
+.mainTopRight .Address {
   margin-top: 1.2rem;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.divInfo .Address img {
+.mainTopRight .Address img {
   margin-right: 0.7rem;
   width: 1rem;
 }
 
-.divBottom {
+.mainBottom {
   font-size: 1.6rem;
 }
 
-.divBottom .formHead div {
+.mainBottom .mainBottomTitle div {
   display: flex;
   align-items: center;
   height: 5.0rem;
   margin-left: 1.5rem;
 }
 
-.divBottom .formHead div span {
+.mainBottom .mainBottomTitle div span {
   padding-left: 1.5rem;
   border-left: 2px solid rgb(95, 192, 205);
 }
 
-.divBottom .formBody {
+.mainBottom .mainBottomBody {
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
 }
 
-.divBottom .formBody div {
+.mainBottom .mainBottomBody div {
   min-height: 5.0rem;
   display: flex;
   align-items: center;
@@ -113,31 +118,32 @@ body {
   margin-left: 1.6rem;
 }
 
-.divBottom .formBody .option {
+.mainBottom .mainBottomBody .option {
   border-top: 0;
 }
 
-.formBody span {
+.mainBottomBody span {
   padding: 0 1.4rem;
 }
 
-.formBody .left {
+.mainBottomBody .left {
   border-right: 1px solid #e1e5e7;
   color: #999;
   min-width: 6.4rem;
 }
 
-.formBody .right {
+.mainBottomBody .right {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
 .option>span>span {
   padding: 0;
 }
 
 .option img {
   width: 1.2rem;
-  padding-right: 0.5rem;
+  /*padding-right: 0.5rem;*/
 }
 .option .left {
   color: black;
@@ -146,6 +152,7 @@ body {
 .price .right {
   color: red;
 }
+
 .introduce .right {
   font-size: 1.4rem;
 }
