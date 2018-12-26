@@ -34,7 +34,7 @@ body {
     width: 100%;
     /*min-width: 300px;*/
     top: 4.4rem;
-    bottom: 6.5rem;
+    bottom: 7.6rem;
     /*正文内容不会被footer挡住*/
     overflow-y: auto;
 }
