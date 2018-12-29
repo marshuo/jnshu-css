@@ -1,0 +1,206 @@
+html {
+    font-size: 10px;
+    font-family: STHeitiSC, heiti, Serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* head */
+
+.head {
+    /*height: 4.4rem;*/
+    /*line-height: 4.4rem;*/
+    background-color: #5ac0ce;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+    font-family: STHeitiSC, 'heiti', serif;
+    position: relative;
+}
+
+.headMiddle {
+    display: inline-block;
+}
+
+.headRight {
+    /*使用绝对定位的时候要注意，父元素一定要使用position: relative; 否则，会出奇怪的问题*/
+    position: absolute;
+    display: inline-block;
+    right: 1.5rem;
+    top: 0;
+
+    /*下面两个语句实现垂直居中*/
+    top: 50%;
+    /*X不变，y轴向上移动自身高度的50%。*/
+    transform: translate(0, -50%);
+}
+
+.headRight img {
+    width: 2.1rem;
+}
+
+button {
+    margin: 0.3rem -0.5rem;
+    padding: 0.8rem 1.2rem;
+    border: 0;
+    /*height: 3.4rem;*/
+    border-radius: 0.3rem;
+    font-size: 1.7rem;
+    background-color: #55a8b3;
+    color: #fff;
+}
+
+button.active {
+    background-color: #fff;
+    color: #5FC0CD;
+}
+
+/*main*/
+.main {
+}
+
+.mainHead {
+    display: flex;
+    justify-content: center;
+}
+
+.mainHead select {
+    flex: 1;
+    font-size: 1.4rem;
+    color: #999999;
+    height: 4.0rem;
+    /*下面两句让select文字居中*/
+    text-align: center;
+    text-align-last: center;
+
+    border: 1px solid #E1E5E7;
+    font-family: HiraginoSansGB, 'heiti', serif;
+}
+
+.mainList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: STHeitiSC, 'heiti', serif;
+}
+
+.listItem {
+    border-bottom: 1px solid #E1E5E7;
+    padding: 0.5rem 1.5rem;
+}
+
+.itemTop, .itemMiddle, .itemBottom {
+    /*下面两句让文字垂直居中*/
+    height: 3.0rem;
+    line-height: 3.0rem;
+
+    /*border-top: 1px solid red;*/
+    /*border-bottom: 1px solid red;*/
+
+}
+.itemTop img , .itemBottom img {
+    width: 1.2rem;
+}
+
+.itemTop , .itemBottom {
+    font-size: 1.3rem;
+    color: #999;
+}
+
+.itemMiddle {
+    margin-left: 1.6rem;
+}
+
+.middleLeft {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    color: #333;
+}
+
+.middleRight {
+    position: relative;
+    display: inline-block;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E63B0E;
+    vertical-align: middle;
+    padding-right: 2.0rem;
+}
+
+.middleRight img {
+    height: 1.65rem;
+    /*vertical-align: middle;*/
+    /*使用绝对定位垂直居中*/
+    position: absolute;
+    top:50%;
+    right: 0;
+    /*left:50%;*/
+    transform: translate(0,-50%);
+}
+
+/* foot */
+.foot {
+    position: fixed;
+    /*display: flex;*/
+    bottom: 0;
+    padding: 1.0rem 0;
+    background-color: #F8FAFB;
+    min-width: 30rem;
+    width: 100%;
+    text-align: center;
+}
+
+.foot div {
+    display: inline-block;
+    margin: 0 2.5rem;
+    /*flex: 1;*/
+}
+
+.foot {
+}
+
+.write {
+    background-image: url(circle.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 2.0rem;
+}
+
+/*
+.footer a {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    flex: 1;
+    border-radius: 0.3rem;
+    font-size: 1.7rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    text-decoration: none;
+    border: 1px solid #5FC0CD;
+    text-align: center;
+}
+
+.footer .btn-common {
+    margin: 0.5rem 0.6rem 0.5rem 1.8rem;
+    color: #5FC0CD;
+    background-color: #fff;
+}
+
+.footer .btn-active {
+    margin: 0.5rem 1.8rem 0.5rem 0.6rem;
+    background-color: #5FC0CD;
+    color: #fff;
+}
+*/
