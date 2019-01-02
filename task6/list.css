@@ -17,7 +17,7 @@ body {
 /* head */
 
 .head {
-    /*height: 4.4rem;*/
+    /*height: 4.5rem;*/
     /*line-height: 4.4rem;*/
     background-color: #5ac0ce;
     font-size: 1.8rem;
@@ -53,7 +53,7 @@ button {
     padding: 0.8rem 1.2rem;
     border: 0;
     /*height: 3.4rem;*/
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     font-size: 1.7rem;
     background-color: #55a8b3;
     color: #fff;
@@ -66,6 +66,7 @@ button.active {
 
 /*main*/
 .main {
+    padding-bottom: 4.8rem;
 }
 
 .mainHead {
@@ -102,11 +103,8 @@ button.active {
     /*下面两句让文字垂直居中*/
     height: 3.0rem;
     line-height: 3.0rem;
-
-    /*border-top: 1px solid red;*/
-    /*border-bottom: 1px solid red;*/
-
 }
+
 .itemTop img , .itemBottom img {
     width: 1.2rem;
 }
@@ -140,67 +138,43 @@ button.active {
 
 .middleRight img {
     height: 1.65rem;
-    /*vertical-align: middle;*/
     /*使用绝对定位垂直居中*/
     position: absolute;
     top:50%;
     right: 0;
-    /*left:50%;*/
     transform: translate(0,-50%);
 }
 
 /* foot */
 .foot {
     position: fixed;
-    /*display: flex;*/
+    display: flex;
     bottom: 0;
-    padding: 1.0rem 0;
     background-color: #F8FAFB;
     min-width: 30rem;
     width: 100%;
     text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #E1E5E7;
+    justify-items: center;
+    align-items: center;
 }
 
 .foot div {
     display: inline-block;
-    margin: 0 2.5rem;
-    /*flex: 1;*/
+    /*margin: 0 2.5rem;*/
+    flex: 1;
 }
 
-.foot {
+.foot div img {
+    /*实现垂直居中*/
+    vertical-align: middle;
 }
 
 .write {
-    background-image: url(circle.png);
-    -webkit-background-size: contain;
-    background-size: contain;
-    width: 2.0rem;
+    width: 4.7rem;
 }
 
-/*
-.footer a {
-    display: inline-block;
-    border: 0;
-    padding: 0;
-    flex: 1;
-    border-radius: 0.3rem;
-    font-size: 1.7rem;
-    height: 4.4rem;
-    line-height: 4.4rem;
-    text-decoration: none;
-    border: 1px solid #5FC0CD;
-    text-align: center;
+.home, .person {
+    width: 2.1rem;
 }
-
-.footer .btn-common {
-    margin: 0.5rem 0.6rem 0.5rem 1.8rem;
-    color: #5FC0CD;
-    background-color: #fff;
-}
-
-.footer .btn-active {
-    margin: 0.5rem 1.8rem 0.5rem 0.6rem;
-    background-color: #5FC0CD;
-    color: #fff;
-}
-*/
