@@ -29,6 +29,7 @@ body {
 
 .headMiddle {
     display: inline-block;
+    position: relative;
 }
 
 .headRight {
@@ -49,7 +50,8 @@ body {
 }
 
 button {
-    margin: 0.3rem -0.5rem;
+    position: relative;
+    margin: 0.3rem -0.8rem;
     padding: 0.8rem 1.2rem;
     border: 0;
     /*height: 3.4rem;*/
@@ -63,6 +65,13 @@ button.active {
     background-color: #fff;
     color: #5FC0CD;
 }
+
+button:focus {
+    /*background-color: #fff;*/
+    /*color: #5FC0CD;*/
+    outline: none;
+}
+
 
 /*main*/
 .main {
@@ -82,9 +91,13 @@ button.active {
     /*下面两句让select文字居中*/
     text-align: center;
     text-align-last: center;
-
     border: 1px solid #E1E5E7;
     font-family: HiraginoSansGB, 'heiti', serif;
+    /*padding-left: 20px;*/
+}
+
+select:focus {
+    outline: none;
 }
 
 .mainList ul {
@@ -106,6 +119,8 @@ button.active {
 }
 
 .itemTop img , .itemBottom img {
+    /*设置图片和文本底部对齐*/
+    vertical-align: text-bottom;
     width: 1.2rem;
 }
 

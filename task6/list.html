@@ -12,8 +12,10 @@
 <div class="container">
     <div class="head">
         <div class="headMiddle">
-            <button class="btnNormal ">找雇主</button>
-            <button class="btnNormal active">找护工</button>
+            <!--<button class="btnNormal btn1 ">找雇主</button>-->
+            <!--<button class="btnNormal active btn2" autofocus>找护工</button>-->
+            <button class="btnNormal">找雇主</button>
+            <button class="btnNormal active" autofocus>找护工</button>
         </div>
         <div class="headRight">
             <img src="bigLocation.png" alt="">
@@ -22,13 +24,21 @@
     <div class="main">
         <div class="mainHead">
             <select name="">
-                <option value="1">所在地</option>
+                <option value="" disabled selected hidden>所在地</option>
+                <option value="2">北京</option>
+                <option value="3">上海</option>
+                <option value="4">广州</option>
             </select>
             <select name="">
-                <option value="1">食宿</option>
+                <option value="" disabled selected hidden>食宿</option>
+                <option value="1">包食宿</option>
+                <option value="1">不包食宿</option>
             </select>
             <select name="">
-                <option value="1">病人情况</option>
+                <option value="" disabled selected hidden>病人情况</option>
+                <option value="1">较好</option>
+                <option value="1">一般</option>
+                <option value="1">较差</option>
             </select>
         </div>
         <div class="mainList">
