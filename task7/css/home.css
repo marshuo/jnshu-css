@@ -1,0 +1,108 @@
+html {
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+div {
+    font-family: HiraginoSansGB, heiti, sans-serif;
+}
+
+.head {
+    background-color: #29bde0;
+}
+
+.head img {
+    margin: 1rem 0.5rem;
+    width: 1.1rem;
+}
+
+.main {
+    padding: 0.85rem 3.45%;
+}
+
+.mainTop {
+    position: relative;
+    height: 3.625rem;
+    line-height: 3.625rem;
+    border: 1px solid #eff0f1;
+    font-size: 1.1rem;
+    color: #9A9A9A;
+    background-color: #fff;
+}
+
+.mainTop img {
+    float: right;
+    width: 0.75rem;
+
+    /*下面语句实现垂直居中*/
+    position: absolute;
+    top: 50%;
+    right: 0.875rem;
+    /*X不变，y轴向上移动自身高度的50%。*/
+    transform: translate(0, -50%);
+}
+
+.mainBootom {
+    margin-top: 0.85rem;
+    background-color: #fff;
+}
+
+.mainBootomHead {
+    font-size: 1.25rem;
+    color: #FBB435;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    border-bottom: 1px solid #FBB435;
+}
+
+.item {
+    position: relative;
+}
+
+.itemButton {
+    position: relative;
+    height: 4.25rem;
+    line-height: 4.25rem;
+    background-color: #69D1E9;
+    color: #fff;
+    margin: 1rem 9.5%;
+    text-align: center;
+}
+
+.itemText {
+    font-size: 0.8125rem;
+    color: #787878;
+    /*margin: 0.85rem 0;*/
+    text-align: center;
+}
+
+.itemArrow{
+    width: 0.75rem;
+    /*margin-right: -9.5%;*/
+
+    /*下面语句实现垂直居中*/
+    position: absolute;
+    right: -9.5%;
+    /*right: 0;*/
+    top: 50%;
+    /*X不变，y轴向上移动自身高度的50%。*/
+    transform: translate(-50%, -50%);
+}
+
+.slider {
+    text-align: center;
+}
+
+.circle {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #F0F0F0;
+}
+
+/*这里使用交叉选择器，只有在class="circle active"时才生效*/
+.circle.active {
+    background-color: #69D1E9;
+}
