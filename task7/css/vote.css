@@ -45,6 +45,9 @@ body {
     margin-right: 0.75rem;
 }
 
+.main {
+    padding-bottom: 20%;
+}
 /*tips*/
 
 .tips {
@@ -64,6 +67,24 @@ body {
     width: 1.625rem;
 }
 
+/*下三角*/
+.tips:after{
+    content: ' ';
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: #b9e9f5 transparent transparent transparent;
+    position: absolute;
+    bottom: -1rem;
+    left: 15%;
+}
+
+.info {
+    color: #fff;
+    margin-left: 15%;
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+}
+
 /*items*/
 .items {
     /*width: 100%;*/
@@ -80,10 +101,48 @@ body {
     这里width: 30% ， padding-bottom: 30% 那么这个元素的宽高就是相等的
     */
     padding-bottom: 20%;
-    border: 5px solid white;
+    border: 2px solid white;
     background-color: #FBB435;
     text-align: center;
 }
+
+/*方法1：hover控制images显示*/
+
+.item .images {
+    display: none;
+    width: 100%;
+    /*text-align: justify;*/
+}
+
+.item .images img {
+    width: 20%;
+}
+
+.item:hover .images {
+    position: absolute;
+    bottom: -2.0rem;
+    /*left: 20%;*/
+    display: block;
+    /*background-color: blue;*/
+}
+
+/*方法2：hover控制images内部的img显示*/
+/*
+.images {
+    position: absolute;
+    bottom: -2.0rem;
+    left: 20%;
+}
+
+.images img {
+    display: none;
+    width: 1rem;
+}
+
+.item:hover img{
+    display: inline-block;
+}
+*/
 
 .role {
     position: absolute;
@@ -99,6 +158,8 @@ body {
     background-color: #1A99B7;
     text-align: center;
     line-height: 1.2;
+    font-size: 0.8rem;
+    color: #fff;
 }
 
 
@@ -107,5 +168,27 @@ body {
     display: block;
     clear: both;
     content: "";
+}
+
+/*foot*/
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background: #29BDE0;
+}
+
+.foot button {
+    padding: 0;
+    border: 0;
+    margin-top: 1.5rem;
+    width: 77.5%;
+    height: 3rem;
+    background-color: #FBB435;
+    color: #fff;
+    font-size: 1.25rem;
 }
 

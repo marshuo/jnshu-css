@@ -18,13 +18,14 @@ div {
 
 .main {
     padding: 0.85rem 3.45%;
+    background-color: #f0f0f0;
 }
 
 .mainTop {
     position: relative;
     height: 3.625rem;
     line-height: 3.625rem;
-    border: 1px solid #eff0f1;
+    border: 1px solid #c9c9c9;
     font-size: 1.1rem;
     color: #9A9A9A;
     background-color: #fff;
@@ -43,8 +44,10 @@ div {
 }
 
 .mainBootom {
+    position: relative;
     margin-top: 0.85rem;
     background-color: #fff;
+    border: 1px solid #c9c9c9;
 }
 
 .mainBootomHead {
@@ -77,18 +80,20 @@ div {
     text-align: center;
 }
 
-.itemArrow{
+.mainRightArrow{
     width: 0.75rem;
     /*margin-right: -9.5%;*/
 
     /*下面语句实现垂直居中*/
     position: absolute;
-    right: -9.5%;
-    /*right: 0;*/
+    /*right: -9.5%;*/
+    right: 0;
     top: 50%;
     /*X不变，y轴向上移动自身高度的50%。*/
     transform: translate(-50%, -50%);
 }
+
+
 
 .slider {
     text-align: center;
