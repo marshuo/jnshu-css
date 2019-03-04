@@ -73,6 +73,10 @@ div {
     text-align: center;
 }
 
+.itemButton a {
+    color: #fff;
+}
+
 .itemText {
     font-size: 0.8125rem;
     color: #787878;
