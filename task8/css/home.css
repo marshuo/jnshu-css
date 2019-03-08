@@ -1,0 +1,64 @@
+html {
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+div {
+    font-family: HiraginoSansGB, heiti, sans-serif;
+}
+
+.head {
+    /*background-color: #29bde0;*/
+}
+
+.login {
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.menu {
+    background-color: #29B078;
+    height: 50px;
+}
+
+.slider {
+
+}
+
+.slider img {
+    height: 300px;
+}
+
+/*main*/
+.main {
+    /*height: 1050px;*/
+}
+.feature {
+    height: 230px;
+}
+.method {
+    height: 210px;
+}
+
+.show {
+    height: 270px;
+}
+.company {
+    height: 200px;
+}
+
+.links {
+    background-color: #ffffff;
+    height: 75px;
+}
+
+/*foot*/
+.foot {
+    height: 100px;
+    background-color: #29B078;
+}
